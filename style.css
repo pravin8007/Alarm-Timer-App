@@ -1,0 +1,193 @@
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: medium;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(29, 29, 35, 1);
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(29, 29, 35, 1);
+    /* padding: 0px 10px 0 10px; */
+    /* padding: 0; */
+    margin: 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+h1{
+    text-align: center;
+}
+.timer-input-section {
+    background-color: rgba(52, 52, 74, 1);
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.Timer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+input{
+    height: 20px;
+    width: 30px;
+    padding: 5px;
+    margin: 5px;
+    border: none;
+    font-size: larger;
+    outline: none;
+    text-decoration: underline;
+    background-color: transparent !important;
+    color: white;
+}
+
+input::placeholder{
+    color: white;
+    font-size: large;
+}
+#Hour{
+    margin: 0px;
+}
+
+#set{
+    width: 75px;
+    height: 10px;
+    padding: 15px;
+    font: 1em sans-serif;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background-color: yellow;
+}
+
+#Current{
+    height: 40px;
+    width: 250px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(57, 57, 62, 1);
+    border-radius: 20px;
+    margin: 20px 0 20px 0;
+}
+
+.Delete{
+    width: 75px;
+    height: 10px;
+    padding: 15px;
+    font-size: small;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background-color: yellow;
+}
+
+.active-timers-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer-Left-section{
+    background-color: rgba(52, 52, 74, 1);
+    padding: 15px;
+    padding-top: 25px !important;
+    padding-bottom: 25px !important;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.Timer-left{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+.time-left{
+    height: 15px;
+    width: 25px;
+}
+
+.Timer-Up{
+    background-color: yellow;
+    height: 70px;
+    width: 400px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: black;
+    font-size: large;
+    font-weight: 700 ;
+    margin-bottom: 20px;
+}
+
+.Stop{
+    width: 75px;
+    height: 10px;
+    padding: 15px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    color:white;
+    background-color: rgba(52, 52, 74, 1);
+}
+
+@media only screen and (max-width: 480px) {
+    .timer-input-section {
+        flex-direction: row;
+        padding: 10px 15px 10px 15px;
+        margin-right: 5px;
+    }
+    .Timer {
+        margin: 0px 5px 0px 5px;
+    }
+    .timer-Left-section{
+        flex-direction: row;
+        height: 25px;
+        width: 290px;
+    }
+    .Timer-left{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .Timer-Up{
+        flex-direction: row;
+        padding: 5px 10px 5px 10px;
+        margin: 5px;
+        width: 300px;
+        height: 60px;
+        margin-bottom: 20px !important;
+    }
+}

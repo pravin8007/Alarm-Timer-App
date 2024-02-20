@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./Assest/Countdown Timer Icon.png" type="image/x-icon">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Multiple Timer App</h1>
+        <form class="timer-input-section" id="form">
+            <div>Set Time :</div>
+            <div class="Timer">
+                    <input type="text" name="hour" id="Hour" placeholder="hh"  maxlength="2">
+                    <div>:</div>
+                    <input type="text" name="minute" id="minute" placeholder="mm" maxlength="2">
+                    <div>:</div>
+                    <input type="text" name="second" id="second" placeholder="ss" maxlength="2">
+             </div>
+             <button id="set">set</button>
+        </form>
+        <div id="Current">Current Timers</div>
+    </div>
+    <div class="active-timers-section">
+        <!-- Active Timers Display Section HTML -->
+        <p id="text">You have no timers currently!</p>
+    </div>
+    <audio id="timer-alert" src="Assest/mixkit-classic-alarm-995.wav" preload="auto"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
